@@ -1,0 +1,118 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Outfit,Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
+.main-container>img{
+    border-radius: 20px;
+    width: 100%;
+    height: 30%;
+}
+
+.heading{
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: young ;
+}
+.description{
+    font-size:2rem;
+    font-weight: 400;
+    color:gray;
+}
+.basic-info{
+    background-color: pink;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 20px;
+}
+.basic-info>h2{
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+ul, ol{
+    margin-left: 1.5rem;
+}
+li, p{
+    font-size: 1.5rem;
+}
+
+li span{
+    font-weight: bold;
+}
+.basic-info li::marker {
+    color: palevioletred;
+  }
+
+  .instruction li::marker {
+    color: chocolate;
+  }
+
+  .sub-heading{
+    font-size: 3rem;
+    font-family: young;
+    color: chocolate;
+    margin-bottom: 20px;
+  }
+
+  .table{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid chocolate;
+ 
+  }
+
+  .calcount{
+    color: chocolate;
+    margin-right: 50%;
+    font-weight: 900;
+  }
+@media only screen and (max-width: 600px) {
+   
+    .main-container{
+        margin: 30px;
+        gap:25px;
+    }
+    .calcount{
+       
+        margin-right: 10%;
+    
+      }
+      .heading{
+        font-size: 2rem;
+      }
+
+      .main-container>img{
+        border-radius: 10px;
+        height: 100%;
+    }
+    .description{
+        font-size:1.5rem;
+        font-weight: 400;
+    }
+  }
